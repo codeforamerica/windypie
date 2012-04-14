@@ -1,0 +1,3 @@
+[submodule "socrata_python"]
+	path = socrata_python
+	url = git@github.com:codeforamerica/socrata-python.git
