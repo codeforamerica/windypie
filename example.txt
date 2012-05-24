@@ -1,0 +1,31 @@
+###
+# Note: this file is executable via: python -m doctest -v example.txt
+###
+
+WindyPie is a more awesome way to query Socrata instances using Python. Here's how it works:
+
+First, import the goodness:
+    >>> from windypie import WindyPie, SocrataPythonAdapter
+
+# TODO: Replace this section when SocrataPythonAdapter goes away
+Then, we create an instance of the SocrataPythonAdapter (this object deals with the uglyness
+that is the current Socrata Python API and is only being used until we have time to rewrite 
+that underlying library). We pass the url of the Socrata instance we want to connect to:
+
+    >>> adapter = SocrataPythonAdapter('http://data.cityofchicago.org')
+
+Next, we pass the adapter to an instance of WindyPie:
+
+    >>> windypie = WindyPie(adapter)
+
+That takes care of the initialization. So, now we can examine the Socrata instance we've pointed to. 
+Let's count how many views are available:
+
+    >>> views = windypie.views
+
+    >>> len(views)
+
+    >>> views[0]
+
+This will output the number of views to the console. In this example using Chicago's Socrata instance, 
+there should be several hundred views.

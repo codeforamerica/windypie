@@ -1,5 +1,6 @@
 configparser==3.2.0r3
 httplib2==0.7.4
+mock==0.8.0
 ordereddict==1.1
 poster==0.8.1
 pymongo==2.1.1
