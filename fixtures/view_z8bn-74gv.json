@@ -1,0 +1,1029 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "z8bn-74gv",
+      "name" : "Police Stations",
+      "attribution" : "Chicago Police Department",
+      "attributionLink" : "http://www.chicagopolice.org/",
+      "averageRating" : 0,
+      "category" : "Public Safety",
+      "createdAt" : 1293052023,
+      "description" : "Chicago Police district station locations and contact information.",
+      "downloadCount" : 655,
+      "numberOfComments" : 0,
+      "oid" : 524629,
+      "publicationAppendEnabled" : false,
+      "publicationDate" : 1331574191,
+      "publicationGroup" : 220749,
+      "publicationStage" : "published",
+      "rowsUpdatedAt" : 1331574157,
+      "rowsUpdatedBy" : "scy9-9wg4",
+      "signed" : false,
+      "tableId" : 296081,
+      "totalTimesRated" : 0,
+      "viewCount" : 34053,
+      "viewLastModified" : 1331574191,
+      "viewType" : "tabular",
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : "sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : "id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : "position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : "created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : "created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : "updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : "updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : "meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : 6403043,
+        "name" : "DISTRICT",
+        "dataTypeName" : "text",
+        "fieldName" : "district",
+        "position" : 1,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1428202,
+        "width" : 50,
+        "cachedContents" : {
+          "non_null" : 24,
+          "smallest" : "1",
+          "null" : 0,
+          "largest" : "Headquarters",
+          "top" : [ {
+            "count" : 1,
+            "item" : "1"
+          }, {
+            "count" : 1,
+            "item" : "10"
+          }, {
+            "count" : 1,
+            "item" : "11"
+          }, {
+            "count" : 1,
+            "item" : "12"
+          }, {
+            "count" : 1,
+            "item" : "13"
+          }, {
+            "count" : 1,
+            "item" : "14"
+          }, {
+            "count" : 1,
+            "item" : "15"
+          }, {
+            "count" : 1,
+            "item" : "16"
+          }, {
+            "count" : 1,
+            "item" : "17"
+          }, {
+            "count" : 1,
+            "item" : "18"
+          }, {
+            "count" : 1,
+            "item" : "19"
+          }, {
+            "count" : 1,
+            "item" : "2"
+          }, {
+            "count" : 1,
+            "item" : "20"
+          }, {
+            "count" : 1,
+            "item" : "22"
+          }, {
+            "count" : 1,
+            "item" : "24"
+          }, {
+            "count" : 1,
+            "item" : "25"
+          }, {
+            "count" : 1,
+            "item" : "3"
+          }, {
+            "count" : 1,
+            "item" : "4"
+          }, {
+            "count" : 1,
+            "item" : "5"
+          }, {
+            "count" : 1,
+            "item" : "6"
+          } ]
+        },
+        "format" : {
+          "align" : "right"
+        }
+      }, {
+        "id" : 6403044,
+        "name" : "ADDRESS",
+        "dataTypeName" : "text",
+        "fieldName" : "address",
+        "position" : 2,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1424829,
+        "width" : 140,
+        "cachedContents" : {
+          "non_null" : 24,
+          "smallest" : "100 S Racine Ave",
+          "null" : 0,
+          "largest" : "937 N Wood St",
+          "top" : [ {
+            "count" : 1,
+            "item" : "100 S Racine Ave"
+          }, {
+            "count" : 1,
+            "item" : "1160 N Larrabee St"
+          }, {
+            "count" : 1,
+            "item" : "1438 W 63rd St"
+          }, {
+            "count" : 1,
+            "item" : "1718 S State St"
+          }, {
+            "count" : 1,
+            "item" : "1900 W Monterey Ave"
+          }, {
+            "count" : 1,
+            "item" : "2150 N California Ave"
+          }, {
+            "count" : 1,
+            "item" : "2255 E 103rd St"
+          }, {
+            "count" : 1,
+            "item" : "3120 S Halsted St"
+          }, {
+            "count" : 1,
+            "item" : "3151 W Harrison St"
+          }, {
+            "count" : 1,
+            "item" : "3315 W Ogden Ave"
+          }, {
+            "count" : 1,
+            "item" : "3420 W 63rd St"
+          }, {
+            "count" : 1,
+            "item" : "3510 S Michigan Ave"
+          }, {
+            "count" : 1,
+            "item" : "4650 N Pulaski Rd"
+          }, {
+            "count" : 1,
+            "item" : "5101 S Wentworth Ave"
+          }, {
+            "count" : 1,
+            "item" : "5151 N Milwaukee Ave"
+          }, {
+            "count" : 1,
+            "item" : "5400 N Lincoln Ave"
+          }, {
+            "count" : 1,
+            "item" : "5555 W Grand Ave"
+          }, {
+            "count" : 1,
+            "item" : "5701 W Madison St"
+          }, {
+            "count" : 1,
+            "item" : "6464 N Clark St"
+          }, {
+            "count" : 1,
+            "item" : "7040 S Cottage Grove Ave"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 6403045,
+        "name" : "CITY",
+        "dataTypeName" : "text",
+        "fieldName" : "city",
+        "position" : 3,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1424830,
+        "width" : 52,
+        "cachedContents" : {
+          "non_null" : 24,
+          "smallest" : "Chicago",
+          "null" : 0,
+          "largest" : "Chicago",
+          "top" : [ {
+            "count" : 24,
+            "item" : "Chicago"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 6403046,
+        "name" : "STATE",
+        "dataTypeName" : "text",
+        "fieldName" : "state",
+        "position" : 4,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1424831,
+        "width" : 50,
+        "cachedContents" : {
+          "non_null" : 24,
+          "smallest" : "IL",
+          "null" : 0,
+          "largest" : "IL",
+          "top" : [ {
+            "count" : 24,
+            "item" : "IL"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 6403047,
+        "name" : "ZIP",
+        "dataTypeName" : "text",
+        "fieldName" : "zip",
+        "position" : 5,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1424834,
+        "width" : 50,
+        "cachedContents" : {
+          "non_null" : 24,
+          "smallest" : "60607",
+          "null" : 0,
+          "largest" : "60653",
+          "top" : [ {
+            "count" : 2,
+            "item" : "60630"
+          }, {
+            "count" : 1,
+            "item" : "60607"
+          }, {
+            "count" : 1,
+            "item" : "60608"
+          }, {
+            "count" : 1,
+            "item" : "60609"
+          }, {
+            "count" : 1,
+            "item" : "60610"
+          }, {
+            "count" : 1,
+            "item" : "60612"
+          }, {
+            "count" : 1,
+            "item" : "60613"
+          }, {
+            "count" : 1,
+            "item" : "60616"
+          }, {
+            "count" : 1,
+            "item" : "60617"
+          }, {
+            "count" : 1,
+            "item" : "60620"
+          }, {
+            "count" : 1,
+            "item" : "60622"
+          }, {
+            "count" : 1,
+            "item" : "60623"
+          }, {
+            "count" : 1,
+            "item" : "60625"
+          }, {
+            "count" : 1,
+            "item" : "60626"
+          }, {
+            "count" : 1,
+            "item" : "60628"
+          }, {
+            "count" : 1,
+            "item" : "60629"
+          }, {
+            "count" : 1,
+            "item" : "60636"
+          }, {
+            "count" : 1,
+            "item" : "60637"
+          }, {
+            "count" : 1,
+            "item" : "60639"
+          }, {
+            "count" : 1,
+            "item" : "60643"
+          } ]
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "align" : "right"
+        }
+      }, {
+        "id" : 6403048,
+        "name" : "WEBSITE",
+        "dataTypeName" : "url",
+        "fieldName" : "website",
+        "position" : 6,
+        "renderTypeName" : "url",
+        "tableColumnId" : 1428190,
+        "width" : 100,
+        "cachedContents" : {
+          "non_null" : 24,
+          "smallest" : {
+            "url" : "https://portal.chicagopolice.org/portal/page/portal/ClearPath"
+          },
+          "null" : 0,
+          "largest" : {
+            "url" : "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District9"
+          },
+          "top" : [ {
+            "count" : 1,
+            "item" : {
+              "url" : "https://portal.chicagopolice.org/portal/page/portal/ClearPath"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "url" : "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District1"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "url" : "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District10"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "url" : "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District11"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "url" : "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District12"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "url" : "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District13"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "url" : "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District14"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "url" : "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District15"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "url" : "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District16"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "url" : "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District17"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "url" : "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District18"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "url" : "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District2"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "url" : "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District20"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "url" : "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District22"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "url" : "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District23"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "url" : "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District24"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "url" : "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District25"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "url" : "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District3"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "url" : "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District4"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "url" : "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District5"
+            }
+          } ]
+        },
+        "format" : {
+        },
+        "subColumnTypes" : [ "url", "description" ]
+      }, {
+        "id" : 6403049,
+        "name" : "PHONE",
+        "dataTypeName" : "phone",
+        "fieldName" : "phone",
+        "position" : 7,
+        "renderTypeName" : "phone",
+        "tableColumnId" : 1428240,
+        "width" : 117,
+        "cachedContents" : {
+          "non_null" : 23,
+          "smallest" : {
+            "phone_number" : "312-742-4410"
+          },
+          "null" : 1,
+          "largest" : {
+            "phone_number" : "312-747-8730"
+          },
+          "top" : [ {
+            "count" : 1,
+            "item" : {
+              "phone_number" : "312-742-4410"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "phone_number" : "312-742-4480"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "phone_number" : "312-742-5870"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "phone_number" : "312-742-8714"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "phone_number" : "312-743-1440"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "phone_number" : "312-744-5907"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "phone_number" : "312-744-8250"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "phone_number" : "312-744-8320"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "phone_number" : "312-745-0710"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "phone_number" : "312-745-3617"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "phone_number" : "312-745-4290"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "phone_number" : "312-746-8309"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "phone_number" : "312-746-8357"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "phone_number" : "312-746-8386"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "phone_number" : "312-746-8605"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "phone_number" : "312-747-7511"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "phone_number" : "312-747-7581"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "phone_number" : "312-747-8201"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "phone_number" : "312-747-8210"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "phone_number" : "312-747-8223"
+            }
+          } ]
+        },
+        "format" : {
+          "align" : "left"
+        },
+        "subColumnTypes" : [ "phone_number", "phone_type" ]
+      }, {
+        "id" : 6403050,
+        "name" : "FAX",
+        "dataTypeName" : "text",
+        "fieldName" : "fax",
+        "position" : 8,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1428248,
+        "width" : 100,
+        "cachedContents" : {
+          "non_null" : 23,
+          "smallest" : "312-742-4421",
+          "null" : 1,
+          "largest" : "312-747-8545",
+          "top" : [ {
+            "count" : 1,
+            "item" : "312-742-4421"
+          }, {
+            "count" : 1,
+            "item" : "312-742-5411"
+          }, {
+            "count" : 1,
+            "item" : "312-742-5771"
+          }, {
+            "count" : 1,
+            "item" : "312-742-8803"
+          }, {
+            "count" : 1,
+            "item" : "312-743-1366"
+          }, {
+            "count" : 1,
+            "item" : "312-744-2422"
+          }, {
+            "count" : 1,
+            "item" : "312-744-4481"
+          }, {
+            "count" : 1,
+            "item" : "312-744-6928"
+          }, {
+            "count" : 1,
+            "item" : "312-745-0814"
+          }, {
+            "count" : 1,
+            "item" : "312-745-3649"
+          }, {
+            "count" : 1,
+            "item" : "312-745-3694"
+          }, {
+            "count" : 1,
+            "item" : "312-746-4235"
+          }, {
+            "count" : 1,
+            "item" : "312-746-4248"
+          }, {
+            "count" : 1,
+            "item" : "312-746-4281"
+          }, {
+            "count" : 1,
+            "item" : "312-746-4353"
+          }, {
+            "count" : 1,
+            "item" : "312-747-5276"
+          }, {
+            "count" : 1,
+            "item" : "312-747-5329"
+          }, {
+            "count" : 1,
+            "item" : "312-747-5396"
+          }, {
+            "count" : 1,
+            "item" : "312-747-5479"
+          }, {
+            "count" : 1,
+            "item" : "312-747-5935"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 6403051,
+        "name" : "TTY",
+        "dataTypeName" : "text",
+        "fieldName" : "tty",
+        "position" : 9,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1428249,
+        "width" : 100,
+        "cachedContents" : {
+          "non_null" : 23,
+          "smallest" : "312-742-4423",
+          "null" : 1,
+          "largest" : "312-747-9172",
+          "top" : [ {
+            "count" : 1,
+            "item" : "312-742-4423"
+          }, {
+            "count" : 1,
+            "item" : "312-742-5451"
+          }, {
+            "count" : 1,
+            "item" : "312-742-5773"
+          }, {
+            "count" : 1,
+            "item" : "312-742-8841"
+          }, {
+            "count" : 1,
+            "item" : "312-743-1485"
+          }, {
+            "count" : 1,
+            "item" : "312-744-7603"
+          }, {
+            "count" : 1,
+            "item" : "312-744-8011"
+          }, {
+            "count" : 1,
+            "item" : "312-744-8260"
+          }, {
+            "count" : 1,
+            "item" : "312-745-0569"
+          }, {
+            "count" : 1,
+            "item" : "312-745-3639"
+          }, {
+            "count" : 1,
+            "item" : "312-745-3693"
+          }, {
+            "count" : 1,
+            "item" : "312-746-5151"
+          }, {
+            "count" : 1,
+            "item" : "312-746-5999"
+          }, {
+            "count" : 1,
+            "item" : "312-746-8383"
+          }, {
+            "count" : 1,
+            "item" : "312-746-9868"
+          }, {
+            "count" : 1,
+            "item" : "312-747-6652"
+          }, {
+            "count" : 1,
+            "item" : "312-747-6656"
+          }, {
+            "count" : 1,
+            "item" : "312-747-7471"
+          }, {
+            "count" : 1,
+            "item" : "312-747-8116"
+          }, {
+            "count" : 1,
+            "item" : "312-747-9168"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 6403052,
+        "name" : "LOCATION",
+        "dataTypeName" : "location",
+        "fieldName" : "location",
+        "position" : 10,
+        "renderTypeName" : "location",
+        "tableColumnId" : 1428203,
+        "width" : 100,
+        "cachedContents" : {
+          "non_null" : 24,
+          "smallest" : {
+            "longitude" : -87.65715796324291,
+            "latitude" : 41.88031148430877,
+            "human_address" : "{\"address\":\"100 Racine Ave\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60607\"}"
+          },
+          "null" : 0,
+          "largest" : {
+            "longitude" : -87.67202575687757,
+            "latitude" : 41.8988188771907,
+            "human_address" : "{\"address\":\"937 Wood St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60622\"}"
+          },
+          "top" : [ {
+            "count" : 1,
+            "item" : {
+              "longitude" : -87.65715796324291,
+              "latitude" : 41.88031148430877,
+              "human_address" : "{\"address\":\"100 Racine Ave\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60607\"}"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "longitude" : -87.64353523498934,
+              "latitude" : 41.90311763649074,
+              "human_address" : "{\"address\":\"1160 Larrabee St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60610\"}"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "longitude" : -87.65945323490796,
+              "latitude" : 41.77965870830844,
+              "human_address" : "{\"address\":\"1438 63rd St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60636\"}"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "longitude" : -87.62734256712464,
+              "latitude" : 41.85882087432612,
+              "human_address" : "{\"address\":\"1718 State St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60616\"}"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "longitude" : -87.66855780581959,
+              "latitude" : 41.691350048962875,
+              "human_address" : "{\"address\":\"1900 Monterey Ave\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60643\"}"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "longitude" : -87.69732502896069,
+              "latitude" : 41.92125066466082,
+              "human_address" : "{\"address\":\"2150 California Ave\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60647\"}"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "longitude" : -87.56718279470178,
+              "latitude" : 41.70778489172678,
+              "human_address" : "{\"address\":\"2255 103rd St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60617\"}"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "longitude" : -87.64661990954984,
+              "latitude" : 41.83750310123302,
+              "human_address" : "{\"address\":\"3120 Halsted St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60608\"}"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "longitude" : -87.70519897133927,
+              "latitude" : 41.873690811457,
+              "human_address" : "{\"address\":\"3151 Harrison St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60612\"}"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "longitude" : -87.70840333296276,
+              "latitude" : 41.85636188418744,
+              "human_address" : "{\"address\":\"3315 Ogden Ave\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60623\"}"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "longitude" : -87.70878104821506,
+              "latitude" : 41.77899321000677,
+              "human_address" : "{\"address\":\"3420 63rd St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60629\"}"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "human_address" : "{\"address\":\"3510 S Michigan Ave Chicago, IL 60653 (41.83086072588734, -87.62330200626332)\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "longitude" : -87.64947786133158,
+              "latitude" : 41.94665927496925,
+              "human_address" : "{\"address\":\"3600 Halsted St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60613\"}"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "longitude" : -87.72816143794648,
+              "latitude" : 41.966052192101166,
+              "human_address" : "{\"address\":\"4650 Pulaski Rd\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60630\"}"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "longitude" : -87.630663656445,
+              "latitude" : 41.8017738753714,
+              "human_address" : "{\"address\":\"5101 Wentworth Ave\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60609\"}"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "longitude" : -87.76623800785116,
+              "latitude" : 41.974188798165315,
+              "human_address" : "{\"address\":\"5151 Milwaukee Ave\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60630\"}"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "longitude" : -87.69301593304144,
+              "latitude" : 41.97954202254066,
+              "human_address" : "{\"address\":\"5400 Lincoln Ave\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60625\"}"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "longitude" : -87.76465420759772,
+              "latitude" : 41.91848587824693,
+              "human_address" : "{\"address\":\"5555 Grand Ave\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60639\"}"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "longitude" : -87.76818126825033,
+              "latitude" : 41.87978022983041,
+              "human_address" : "{\"address\":\"5701 Madison St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60644\"}"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "longitude" : -87.67118638353655,
+              "latitude" : 41.99944797184307,
+              "human_address" : "{\"address\":\"6464 Clark St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60626\"}"
+            }
+          } ]
+        },
+        "format" : {
+          "align" : "left",
+          "view" : "address_coords"
+        },
+        "subColumnTypes" : [ "human_address", "latitude", "longitude", "machine_address", "needs_recoding" ]
+      } ],
+      "grants" : [ {
+        "inherited" : false,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "metadata" : {
+        "custom_fields" : {
+          "Metadata" : {
+            "Time Period" : "Current as of 2011",
+            "Data Owner" : "Police",
+            "Frequency" : "Data is updated as needed"
+          }
+        },
+        "rdfSubject" : "0",
+        "attachments" : [ {
+          "blobId" : "DB725B05-F930-4CCC-8AEE-3175DB0B10EA",
+          "name" : "police_stations_poly.zip",
+          "filename" : "police_stations_poly.zip"
+        } ]
+      },
+      "owner" : {
+        "id" : "scy9-9wg4",
+        "displayName" : "cocadmin",
+        "emailUnsubscribed" : false,
+        "privacyControl" : "login",
+        "privilegesDisabled" : false,
+        "profileImageUrlLarge" : "/images/profile/4783/7574/CitySeal_Small_large.jpg",
+        "profileImageUrlMedium" : "/images/profile/4783/7574/CitySeal_Small_thumb.jpg",
+        "profileImageUrlSmall" : "/images/profile/4783/7574/CitySeal_Small_tiny.jpg",
+        "profileLastModified" : 1327605094,
+        "roleName" : "administrator",
+        "screenName" : "cocadmin",
+        "rights" : [ "create_datasets", "edit_others_datasets", "edit_sdp", "edit_site_theme", "moderate_comments", "manage_users", "chown_datasets", "edit_nominations", "approve_nominations", "feature_items", "federations", "manage_stories", "manage_approval", "change_configurations", "view_domain", "view_others_datasets", "edit_pages", "create_pages" ]
+      },
+      "query" : {
+      },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "scy9-9wg4",
+        "displayName" : "cocadmin",
+        "emailUnsubscribed" : false,
+        "privacyControl" : "login",
+        "privilegesDisabled" : false,
+        "profileImageUrlLarge" : "/images/profile/4783/7574/CitySeal_Small_large.jpg",
+        "profileImageUrlMedium" : "/images/profile/4783/7574/CitySeal_Small_thumb.jpg",
+        "profileImageUrlSmall" : "/images/profile/4783/7574/CitySeal_Small_tiny.jpg",
+        "profileLastModified" : 1327605094,
+        "roleName" : "administrator",
+        "screenName" : "cocadmin",
+        "rights" : [ "create_datasets", "edit_others_datasets", "edit_sdp", "edit_site_theme", "moderate_comments", "manage_users", "chown_datasets", "edit_nominations", "approve_nominations", "feature_items", "federations", "manage_stories", "manage_approval", "change_configurations", "view_domain", "view_others_datasets", "edit_pages", "create_pages" ]
+      },
+      "tags" : [ "facilities", "gis" ],
+      "flags" : [ "default" ]
+    }
+  },
+  "data" : [ [ 1, "65FCCC12-E3B1-4BB8-8584-71A815E14289", 1, 1331574120, "386464", 1331574153, "386464", "{\n}", "Headquarters", "3510 S Michigan Ave", "Chicago", "IL", "60653", [ "https://portal.chicagopolice.org/portal/page/portal/ClearPath", null ], [ null, null ], null, null, [ "{\"address\":\"3510 S Michigan Ave Chicago, IL 60653 (41.83086072588734, -87.62330200626332)\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", null, null, null, true ] ]
+, [ 3, "3FF7B738-DD06-4485-8331-5CF9F43C27BA", 3, 1331574120, "386464", 1331574120, "386464", "{\n}", "1", "1718 S State St", "Chicago", "IL", "60616", [ "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District1", null ], [ "312-745-4290", null ], "312-745-3694", "312-745-3693", [ "{\"address\":\"1718 State St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60616\"}", "41.85882087432612", "-87.62734256712464", null, false ] ]
+, [ 4, "9A651BCB-741A-4079-9E79-510109E10694", 4, 1331574120, "386464", 1331574120, "386464", "{\n}", "2", "5101 S Wentworth Ave", "Chicago", "IL", "60609", [ "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District2", null ], [ "312-747-8366", null ], "312-747-5396", "312-747-6656", [ "{\"address\":\"5101 Wentworth Ave\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60609\"}", "41.8017738753714", "-87.630663656445", null, false ] ]
+, [ 5, "1A1ABF61-FD37-42A7-A0F5-F121661C211E", 5, 1331574120, "386464", 1331574120, "386464", "{\n}", "3", "7040 S Cottage Grove Ave", "Chicago", "IL", "60637", [ "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District3", null ], [ "312-747-8201", null ], "312-747-5479", "312-747-9168", [ "{\"address\":\"7040 Cottage Grove Ave\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60637\"}", "41.76697112291843", "-87.6056617928308", null, false ] ]
+, [ 6, "555846EF-6E05-4E76-8CC4-FD8B0DB9BD3F", 6, 1331574120, "386464", 1331574120, "386464", "{\n}", "4", "2255 E 103rd St", "Chicago", "IL", "60617", [ "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District4", null ], [ "312-747-7581", null ], "312-747-5276", "312-747-9169", [ "{\"address\":\"2255 103rd St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60617\"}", "41.70778489172678", "-87.56718279470178", null, false ] ]
+, [ 7, "3BF873F6-85CB-4783-838A-2966D3925D71", 7, 1331574120, "386464", 1331574120, "386464", "{\n}", "5", "727 E 111th St", "Chicago", "IL", "60628", [ "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District5", null ], [ "312-747-8210", null ], "312-747-5935", "312-747-9170", [ "{\"address\":\"727 111th St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60628\"}", "41.69279473591493", "-87.60536435875626", null, false ] ]
+, [ 8, "5815F52F-1DB4-40D6-8BD3-7372EC316B12", 8, 1331574120, "386464", 1331574120, "386464", "{\n}", "6", "7808 S Halsted St", "Chicago", "IL", "60620", [ "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District6", null ], [ "312-745-3617", null ], "312-745-3649", "312-745-3639", [ "{\"address\":\"7808 Halsted St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60620\"}", "41.7522817574851", "-87.64414141672431", null, false ] ]
+, [ 9, "4F95028C-F280-49B9-9626-8BED4188223B", 9, 1331574120, "386464", 1331574120, "386464", "{\n}", "7", "1438 W 63rd St", "Chicago", "IL", "60636", [ "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District7", null ], [ "312-747-8223", null ], "312-747-6558", "312-747-6652", [ "{\"address\":\"1438 63rd St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60636\"}", "41.77965870830844", "-87.65945323490796", null, false ] ]
+, [ 10, "47745207-E391-40F2-AEBF-5544C37CE239", 10, 1331574120, "386464", 1331574120, "386464", "{\n}", "8", "3420 W 63rd St", "Chicago", "IL", "60629", [ "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District8", null ], [ "312-747-8730", null ], "312-747-8545", "312-747-8116", [ "{\"address\":\"3420 63rd St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60629\"}", "41.77899321000677", "-87.70878104821506", null, false ] ]
+, [ 11, "B8117BAC-6709-4372-9F68-5292EDCD4748", 11, 1331574120, "386464", 1331574120, "386464", "{\n}", "9", "3120 S Halsted St", "Chicago", "IL", "60608", [ "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District9", null ], [ "312-747-8227", null ], "312-747-5329", "312-747-9172", [ "{\"address\":\"3120 Halsted St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60608\"}", "41.83750310123302", "-87.64661990954984", null, false ] ]
+, [ 12, "35703D77-2D40-493D-9136-E00488C9AA06", 12, 1331574120, "386464", 1331574120, "386464", "{\n}", "10", "3315 W Ogden Ave", "Chicago", "IL", "60623", [ "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District10", null ], [ "312-747-7511", null ], "312-747-7429", "312-747-7471", [ "{\"address\":\"3315 Ogden Ave\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60623\"}", "41.85636188418744", "-87.70840333296276", null, false ] ]
+, [ 13, "5AD4B128-ACC2-4BB6-8383-496E02C66C70", 13, 1331574120, "386464", 1331574120, "386464", "{\n}", "11", "3151 W Harrison St", "Chicago", "IL", "60612", [ "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District11", null ], [ "312-746-8386", null ], "312-746-4281", "312-746-5151", [ "{\"address\":\"3151 Harrison St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60612\"}", "41.873690811457", "-87.70519897133927", null, false ] ]
+, [ 14, "3D633FE5-F047-4F6F-B978-39D0C9DD4E0E", 14, 1331574120, "386464", 1331574120, "386464", "{\n}", "12", "100 S Racine Ave", "Chicago", "IL", "60607", [ "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District12", null ], [ "312-746-8309", null ], "312-746-4248", "312-746-9868", [ "{\"address\":\"100 Racine Ave\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60607\"}", "41.88031148430877", "-87.65715796324291", null, false ] ]
+, [ 15, "14A14042-6EF8-4902-9D05-ECEC9B39251D", 15, 1331574120, "386464", 1331574120, "386464", "{\n}", "13", "937 N Wood St", "Chicago", "IL", "60622", [ "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District13", null ], [ "312-746-8357", null ], "312-746-4235", "312-746-5999", [ "{\"address\":\"937 Wood St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60622\"}", "41.8988188771907", "-87.67202575687757", null, false ] ]
+, [ 16, "A011C119-43E0-4A82-8E85-F0F9BDD6CCAF", 16, 1331574120, "386464", 1331574120, "386464", "{\n}", "14", "2150 N California Ave", "Chicago", "IL", "60647", [ "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District14", null ], [ "312-744-8250", null ], "312-744-2422", "312-744-8260", [ "{\"address\":\"2150 California Ave\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60647\"}", "41.92125066466082", "-87.69732502896069", null, false ] ]
+, [ 17, "02EBC54B-C022-4087-829B-29CC8AE4DDF1", 17, 1331574120, "386464", 1331574120, "386464", "{\n}", "15", "5701 W Madison St", "Chicago", "IL", "60644", [ "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District15", null ], [ "312-743-1440", null ], "312-743-1366", "312-743-1485", [ "{\"address\":\"5701 Madison St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60644\"}", "41.87978022983041", "-87.76818126825033", null, false ] ]
+, [ 18, "78366E4F-447A-48A4-886F-E28F9FCB3F55", 18, 1331574120, "386464", 1331574120, "386464", "{\n}", "16", "5151 N Milwaukee Ave", "Chicago", "IL", "60630", [ "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District16", null ], [ "312-742-4480", null ], "312-742-4421", "312-742-4423", [ "{\"address\":\"5151 Milwaukee Ave\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60630\"}", "41.974188798165315", "-87.76623800785116", null, false ] ]
+, [ 19, "60095514-90F1-4E69-B9EA-5DAF3D45482A", 19, 1331574120, "386464", 1331574120, "386464", "{\n}", "17", "4650 N Pulaski Rd", "Chicago", "IL", "60630", [ "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District17", null ], [ "312-742-4410", null ], "312-742-5411", "312-742-5451", [ "{\"address\":\"4650 Pulaski Rd\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60630\"}", "41.966052192101166", "-87.72816143794648", null, false ] ]
+, [ 20, "455BE167-9D87-4302-B82D-27FACAFDC9FE", 20, 1331574120, "386464", 1331574120, "386464", "{\n}", "18", "1160 N Larrabee St", "Chicago", "IL", "60610", [ "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District18", null ], [ "312-742-5870", null ], "312-742-5771", "312-742-5773", [ "{\"address\":\"1160 Larrabee St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60610\"}", "41.90311763649074", "-87.64353523498934", null, false ] ]
+, [ 21, "F66C3BAD-7F9A-462E-B064-A1B8E126F738", 21, 1331574120, "386464", 1331574120, "386464", "{\n}", "19", "850 W Addison St", "Chicago", "IL", "60613", [ "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District23", null ], [ "312-744-8320", null ], "312-744-4481", "312-744-8011", [ "{\"address\":\"3600 Halsted St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60613\"}", "41.94665927496925", "-87.64947786133158", null, false ] ]
+, [ 22, "DF29C1A8-452A-4CBB-8A34-E90821A17072", 22, 1331574120, "386464", 1331574120, "386464", "{\n}", "20", "5400 N Lincoln Ave", "Chicago", "IL", "60625", [ "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District20", null ], [ "312-742-8714", null ], "312-742-8803", "312-742-8841", [ "{\"address\":\"5400 Lincoln Ave\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60625\"}", "41.97954202254066", "-87.69301593304144", null, false ] ]
+, [ 23, "DA38093C-B854-438D-8273-2046AB006217", 23, 1331574120, "386464", 1331574120, "386464", "{\n}", "22", "1900 W Monterey Ave", "Chicago", "IL", "60643", [ "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District22", null ], [ "312-745-0710", null ], "312-745-0814", "312-745-0569", [ "{\"address\":\"1900 Monterey Ave\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60643\"}", "41.691350048962875", "-87.66855780581959", null, false ] ]
+, [ 24, "DFAE5107-9891-4AE2-8ACC-C1A65B43BE17", 24, 1331574120, "386464", 1331574120, "386464", "{\n}", "24", "6464 N Clark St", "Chicago", "IL", "60626", [ "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District24", null ], [ "312-744-5907", null ], "312-744-6928", "312-744-7603", [ "{\"address\":\"6464 Clark St\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60626\"}", "41.99944797184307", "-87.67118638353655", null, false ] ]
+, [ 25, "30B0F812-DFBC-43AD-A649-F03CD883A190", 25, 1331574120, "386464", 1331574120, "386464", "{\n}", "25", "5555 W Grand Ave", "Chicago", "IL", "60639", [ "https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts/District25", null ], [ "312-746-8605", null ], "312-746-4353", "312-746-8383", [ "{\"address\":\"5555 Grand Ave\",\"city\":\"Chicago\",\"state\":\"IL\",\"zip\":\"60639\"}", "41.91848587824693", "-87.76465420759772", null, false ] ]
+ ]
+}

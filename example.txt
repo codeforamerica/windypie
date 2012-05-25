@@ -5,27 +5,45 @@
 WindyPie is a more awesome way to query Socrata instances using Python. Here's how it works:
 
 First, import the goodness:
-    >>> from windypie import WindyPie, SocrataPythonAdapter
+    >>> from windypie import WindyPie, SocrataPythonAdapter # doctest:+ELLIPSIS
 
 # TODO: Replace this section when SocrataPythonAdapter goes away
 Then, we create an instance of the SocrataPythonAdapter (this object deals with the uglyness
 that is the current Socrata Python API and is only being used until we have time to rewrite 
 that underlying library). We pass the url of the Socrata instance we want to connect to:
 
-    >>> adapter = SocrataPythonAdapter('http://data.cityofchicago.org')
+    >>> adapter = SocrataPythonAdapter('http://data.cityofchicago.org') # doctest:+ELLIPSIS
 
 Next, we pass the adapter to an instance of WindyPie:
 
-    >>> windypie = WindyPie(adapter)
+    >>> windypie = WindyPie(adapter) # doctest:+ELLIPSIS
 
-That takes care of the initialization. So, now we can examine the Socrata instance we've pointed to. 
-Let's count how many views are available:
+Now, let's query for a specific view id:
+    >>> view = windypie.views('z8bn-74gv') #doctest: +ELLIPSIS
 
-    >>> views = windypie.views
+We can check the view's data field and count the rows
+    >>> len(view['data'])
+    24
 
-    >>> len(views)
+Alternativly, we can get all views that have a certain string in their name field:
 
-    >>> views[0]
+    >>> police_station_views = windypie.views(view_name='Police Station')
 
-This will output the number of views to the console. In this example using Chicago's Socrata instance, 
-there should be several hundred views.
+How many views contain the words "Police Station"?
+
+    >>> len(police_station_views)
+    3
+
+And what are their names exactly?
+
+    >>> print [view['view']['name'] for view in police_station_views]
+    [u'Police Stations', u'Police Stations - Map', u'Police Stations - Shapefiles']
+
+Hell, let's get all the views!!!
+
+    >>> all_the_views = windypie.views()
+
+How many views are there total?
+
+    >>> len(all_the_views)
+    744

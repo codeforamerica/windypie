@@ -1,0 +1,206 @@
+[ {
+  "id" : "z8bn-74gv",
+  "name" : "Police Stations",
+  "averageRating" : 0,
+  "category" : "Public Safety",
+  "createdAt" : 1293052023,
+  "description" : "Chicago Police district station locations and contact information.",
+  "downloadCount" : 655,
+  "numberOfComments" : 0,
+  "oid" : 524629,
+  "publicationAppendEnabled" : false,
+  "publicationDate" : 1331574191,
+  "publicationGroup" : 220749,
+  "publicationStage" : "published",
+  "rowsUpdatedAt" : 1331574157,
+  "rowsUpdatedBy" : "scy9-9wg4",
+  "signed" : false,
+  "tableId" : 296081,
+  "totalTimesRated" : 0,
+  "viewCount" : 34058,
+  "viewLastModified" : 1331574191,
+  "viewType" : "tabular",
+  "grants" : [ {
+    "inherited" : true,
+    "type" : "viewer",
+    "flags" : [ "public" ]
+  } ],
+  "metadata" : {
+    "custom_fields" : {
+      "Metadata" : {
+        "Time Period" : "Current as of 2011",
+        "Data Owner" : "Police",
+        "Frequency" : "Data is updated as needed"
+      }
+    },
+    "rdfSubject" : "0",
+    "attachments" : [ {
+      "blobId" : "DB725B05-F930-4CCC-8AEE-3175DB0B10EA",
+      "name" : "police_stations_poly.zip",
+      "filename" : "police_stations_poly.zip"
+    } ]
+  },
+  "owner" : {
+    "id" : "scy9-9wg4",
+    "displayName" : "cocadmin",
+    "emailUnsubscribed" : false,
+    "privacyControl" : "login",
+    "profileImageUrlLarge" : "/images/profile/4783/7574/CitySeal_Small_large.jpg",
+    "profileImageUrlMedium" : "/images/profile/4783/7574/CitySeal_Small_thumb.jpg",
+    "profileImageUrlSmall" : "/images/profile/4783/7574/CitySeal_Small_tiny.jpg",
+    "profileLastModified" : 1327605094,
+    "screenName" : "cocadmin"
+  },
+  "rights" : [ "read" ],
+  "tableAuthor" : {
+    "id" : "scy9-9wg4",
+    "displayName" : "cocadmin",
+    "emailUnsubscribed" : false,
+    "privacyControl" : "login",
+    "profileImageUrlLarge" : "/images/profile/4783/7574/CitySeal_Small_large.jpg",
+    "profileImageUrlMedium" : "/images/profile/4783/7574/CitySeal_Small_thumb.jpg",
+    "profileImageUrlSmall" : "/images/profile/4783/7574/CitySeal_Small_tiny.jpg",
+    "profileLastModified" : 1327605094,
+    "screenName" : "cocadmin"
+  },
+  "tags" : [ "facilities", "gis" ],
+  "flags" : [ "default" ]
+}, {
+  "id" : "gkur-vufi",
+  "name" : "Police Stations - Map",
+  "averageRating" : 0,
+  "category" : "Public Safety",
+  "createdAt" : 1294260782,
+  "description" : "Police station locations in Chicago",
+  "displayType" : "map",
+  "downloadCount" : 160,
+  "moderationStatus" : true,
+  "numberOfComments" : 0,
+  "oid" : 524634,
+  "publicationAppendEnabled" : false,
+  "publicationDate" : 1331574191,
+  "publicationGroup" : 220749,
+  "publicationStage" : "published",
+  "rowsUpdatedAt" : 1331574157,
+  "rowsUpdatedBy" : "scy9-9wg4",
+  "signed" : false,
+  "tableId" : 296081,
+  "totalTimesRated" : 0,
+  "viewCount" : 7460,
+  "viewLastModified" : 1314569167,
+  "viewType" : "tabular",
+  "grants" : [ {
+    "inherited" : true,
+    "type" : "viewer",
+    "flags" : [ "public" ]
+  } ],
+  "metadata" : {
+    "custom_fields" : {
+      "Metadata" : {
+        "Time Period" : "Current as of 2011",
+        "Data Owner" : "Police",
+        "Frequency" : "Data is updated as needed"
+      }
+    },
+    "rdfSubject" : "0",
+    "attachments" : [ {
+      "blobId" : "DB725B05-F930-4CCC-8AEE-3175DB0B10EA",
+      "name" : "police_stations_poly.zip",
+      "filename" : "police_stations_poly.zip"
+    } ]
+  },
+  "owner" : {
+    "id" : "scy9-9wg4",
+    "displayName" : "cocadmin",
+    "emailUnsubscribed" : false,
+    "privacyControl" : "login",
+    "profileImageUrlLarge" : "/images/profile/4783/7574/CitySeal_Small_large.jpg",
+    "profileImageUrlMedium" : "/images/profile/4783/7574/CitySeal_Small_thumb.jpg",
+    "profileImageUrlSmall" : "/images/profile/4783/7574/CitySeal_Small_tiny.jpg",
+    "profileLastModified" : 1327605094,
+    "screenName" : "cocadmin"
+  },
+  "rights" : [ "read" ],
+  "tableAuthor" : {
+    "id" : "scy9-9wg4",
+    "displayName" : "cocadmin",
+    "emailUnsubscribed" : false,
+    "privacyControl" : "login",
+    "profileImageUrlLarge" : "/images/profile/4783/7574/CitySeal_Small_large.jpg",
+    "profileImageUrlMedium" : "/images/profile/4783/7574/CitySeal_Small_thumb.jpg",
+    "profileImageUrlSmall" : "/images/profile/4783/7574/CitySeal_Small_tiny.jpg",
+    "profileLastModified" : 1327605094,
+    "screenName" : "cocadmin"
+  },
+  "tags" : [ "facilities", "gis" ]
+}, {
+  "id" : "tc9m-x6u6",
+  "name" : "Police Stations - Shapefiles",
+  "averageRating" : 0,
+  "blobFilename" : "Police Stations-2.zip",
+  "blobFileSize" : 10893,
+  "blobId" : "HMClvUm2M7IQfD9xzy3C5_kvyLz8luXUcmPxu1jjH5I",
+  "blobMimeType" : "application/zip; charset=binary",
+  "category" : "Public Safety",
+  "createdAt" : 1311117802,
+  "description" : "Chicago Police district station locations. To view or use these files, compression software and special GIS software, such as ESRI ArcGIS, is required. To download, right-click the \"Download\" link above and choose \"Save link as.\"",
+  "displayType" : "blob",
+  "downloadCount" : 217,
+  "numberOfComments" : 0,
+  "oid" : 330042,
+  "publicationAppendEnabled" : false,
+  "publicationDate" : 1311117802,
+  "publicationGroup" : 238587,
+  "publicationStage" : "published",
+  "signed" : false,
+  "tableId" : 238587,
+  "totalTimesRated" : 0,
+  "viewCount" : 262,
+  "viewLastModified" : 1314569129,
+  "viewType" : "blobby",
+  "grants" : [ {
+    "inherited" : false,
+    "type" : "viewer",
+    "flags" : [ "public" ]
+  } ],
+  "metadata" : {
+    "custom_fields" : {
+      "Metadata" : {
+        "Time Period" : "Current as of 2011",
+        "Data Owner" : "Police",
+        "Frequency" : "Data is updated as needed"
+      }
+    },
+    "renderTypeConfig" : {
+      "visible" : {
+        "blob" : true
+      }
+    },
+    "availableDisplayTypes" : [ "blob" ]
+  },
+  "owner" : {
+    "id" : "scy9-9wg4",
+    "displayName" : "cocadmin",
+    "emailUnsubscribed" : false,
+    "privacyControl" : "login",
+    "profileImageUrlLarge" : "/images/profile/4783/7574/CitySeal_Small_large.jpg",
+    "profileImageUrlMedium" : "/images/profile/4783/7574/CitySeal_Small_thumb.jpg",
+    "profileImageUrlSmall" : "/images/profile/4783/7574/CitySeal_Small_tiny.jpg",
+    "profileLastModified" : 1327605094,
+    "screenName" : "cocadmin"
+  },
+  "rights" : [ "read" ],
+  "tableAuthor" : {
+    "id" : "scy9-9wg4",
+    "displayName" : "cocadmin",
+    "emailUnsubscribed" : false,
+    "privacyControl" : "login",
+    "profileImageUrlLarge" : "/images/profile/4783/7574/CitySeal_Small_large.jpg",
+    "profileImageUrlMedium" : "/images/profile/4783/7574/CitySeal_Small_thumb.jpg",
+    "profileImageUrlSmall" : "/images/profile/4783/7574/CitySeal_Small_tiny.jpg",
+    "profileLastModified" : 1327605094,
+    "screenName" : "cocadmin"
+  },
+  "tags" : [ "facilities", "gis", "shapefiles" ],
+  "flags" : [ "default" ]
+} ]
