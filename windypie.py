@@ -21,6 +21,15 @@ class WindyPie(object):
     def version(self):
         return self._version
 
+    class View(object):
+        def __init__(self, data):
+            self._data = data
+
+        @property
+        def rows(self):
+            '''all the objects from a view's data field'''
+            return self._data['data']
+
     class Views(object):
         '''Represents collection of Socrata views'''
         def __init__(self, adapter):
@@ -31,14 +40,15 @@ class WindyPie(object):
             if None == view_id:
                 return self.query(view_name)
             else:
-                return self._adapter.find_by_id(view_id)
+                return WindyPie.View(self._adapter.find_by_id(view_id))
 
         def query(self, view_name):
             '''query socrata views table and return based on paramter filter values'''
             params = {}
             if None != view_name:
                 params['name'] = view_name
-            return self._adapter.query_views(params)
+            views = []
+            return self._adapter.query_views(params) 
 
 class SocrataPythonAdapter:
     '''Manage working with Socrata's odd python library until it is rewritten'''
