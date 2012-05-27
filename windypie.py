@@ -40,7 +40,7 @@ class WindyPie(object):
             # format such as json
             document_collection = []
             for row in self.rows:
-                document = DotDict()
+                document = DotDict() # using DotDict class for dot notation of row fields
                 for i in range(0,len(row)):
                     document[self.fields[i]] = str(row[i])
                 document_collection.append(document)
@@ -67,6 +67,7 @@ class WindyPie(object):
             return self._collection
 
         def __search_for_rows(self, field, value):
+            '''find subset of rows with fields equal to value'''
             collection = []
             for row in self.collection:
                 print row
@@ -75,6 +76,10 @@ class WindyPie(object):
             return collection
 
         def __getattr__(self, name):
+            '''handle requests to search for rows by field name dynamically'''
+            # if the request is not in the ballpark then reject it
+            if not name.startswith('collection_by_'):
+                raise AttributeError
             def method(*args):
                 field = name[len('collection_by_'):]
                 return self.__search_for_rows(field, args[0])
@@ -130,6 +135,11 @@ class SocrataPythonAdapter:
         self.config.set('server', 'host', self.url)
 
 class DotDict(dict):
+    '''
+    dict that supports dot notation for elements
+    this is a cherry pick of more comprehensive solutions
+    see: https://github.com/vkuznet/DotDict
+    '''
     def __getattr__(self, attr):
         return self.get(attr, None)
     __setattr__= dict.__setitem__
