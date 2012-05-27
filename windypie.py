@@ -3,7 +3,7 @@ from socrata_python.Socrata import *
 
 '''
 WindyPie is a Python module that allows you to easily interact with
-all the Socrata Data Portals
+ALL the Socrata Data Portals
 '''
 
 class WindyPie(object):
@@ -19,16 +19,66 @@ class WindyPie(object):
 
     @property
     def version(self):
+        '''return version number of this software'''
         return self._version
 
     class View(object):
+        '''A model object that represents a socrata view'''
         def __init__(self, data):
             self._data = data
+            self._field_names = []
+            self._collection = self.__init_collection()
+
+        def __init_collection(self):
+            '''load raw socrata data into more managable collections of columns and rows'''
+            # socrata view meta data is lengthy! we load only the filed (aka column) string
+            # values into our fields property
+            for column in self.columns:
+                self._field_names.append(str(column['fieldName']))
+            # socrata rows include only the data, this creates a list of dictionary objects
+            # (keyed by field name) so that rows can be output in an easier to manage 
+            # format such as json
+            document_collection = []
+            for row in self.rows:
+                document = {}
+                for i in range(0,len(row)):
+                    document[self.fields[i]] = str(row[i])
+                document_collection.append(document)
+            return document_collection
+
+        @property
+        def fields(self):
+            '''all field name strings from columns'''
+            return self._field_names
 
         @property
         def rows(self):
-            '''all the objects from a view's data field'''
+            '''the list of raw, socrata row objects for the view'''
             return self._data['data']
+
+        @property
+        def columns(self):
+            '''the list of raw, socrata column objects for the view'''
+            return self._data['meta']['view']['columns']
+
+        @property
+        def collection(self):
+            '''the list of row objects for the view as python dicts'''
+            return self._collection
+
+        def __search_for_rows(self, field, value):
+            collection = []
+            for row in self.collection:
+                print row
+                if value == row[str(field)]:
+                    collection.append(row)
+            return collection
+
+        def __getattr__(self, name):
+            def method(*args):
+                field = name[len('collection_by_'):]
+                return self.__search_for_rows(field, args[0])
+            return method
 
     class Views(object):
         '''Represents collection of Socrata views'''
@@ -47,7 +97,6 @@ class WindyPie(object):
             params = {}
             if None != view_name:
                 params['name'] = view_name
-            views = []
             return self._adapter.query_views(params) 
 
 class SocrataPythonAdapter:
