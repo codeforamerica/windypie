@@ -70,7 +70,6 @@ class WindyPie(object):
             '''find subset of rows with fields equal to value'''
             collection = []
             for row in self.collection:
-                print row
                 if value == row[str(field)]:
                     collection.append(row)
             return collection
