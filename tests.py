@@ -41,7 +41,7 @@ class CoreTests(unittest.TestCase):
         view = windy.views('z8bn-74gv')
         # counts of "raw" socrata data are as expected
         self.assertEqual(len(view.rows), 24)
-        self.assertEqual(len(view.columns), 18)
+        self.assertEqual(len(view.columns), 19)
         # the "WindyPie" version of the data, formatted in a list of python dicts
         self.assertEqual(len(view.collection), 24)
         expected_fields = ['sid', 'id', 'position', 'created_at', \
