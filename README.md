@@ -1,6 +1,6 @@
-This is so totally under construction!
+[![Build Status](https://secure.travis-ci.org/codeforamerica/windypie.png?branch=master)](http://travis-ci.org/codeforamerica/windypie)
 
-Inspired by the Ruby [Windy Socrata API wrapper](https://github.com/Chicago/windy) and the souls of Django ponies.
+Inspired by the Ruby [Windy Socrata API wrapper](https://github.com/Chicago/windy).
 
 Installation Instructions
 -------------------------
