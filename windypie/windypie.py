@@ -4,6 +4,10 @@ from socrata_python.Socrata import *
 '''
 WindyPie is a Python module that allows you to easily interact with
 ALL the Socrata Data Portals
+
+Copyright (C) 2012, Code for America
+This is open source software, released under a standard 2-clause
+BSD-style license; see the file LICENSE for details.
 '''
 
 class WindyPie(object):
@@ -12,7 +16,7 @@ class WindyPie(object):
         if not socrata_adapter:
             socrata_adapter = SocrataPythonAdapter(url)
         self._views = WindyPie.Views(socrata_adapter)
-        self._version = '0.0.1'
+        self._version = '0.0.3'
 
     @property
     def views(self):

@@ -4,8 +4,16 @@ import json
 from mock import Mock
 from mock import MagicMock
 
-from windypie import WindyPie
-from windypie import SocrataPythonAdapter
+from windypie.windypie import WindyPie
+from windypie.windypie import SocrataPythonAdapter
+
+'''
+Unit tests for WindyPie module
+
+Copyright (C) 2012, Code for America
+This is open source software, released under a standard 2-clause
+BSD-style license; see the file LICENSE for details.
+'''
 
 class CoreTests(unittest.TestCase):
 
@@ -91,7 +99,7 @@ class CoreTests(unittest.TestCase):
         self.assertEqual(len(all_views), 50)
 
     def test_version(self):
-        self.assertEqual(WindyPie(None).version, '0.0.1')
+        self.assertEqual(WindyPie(None).version, '0.0.3')
 
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(CoreTests)
