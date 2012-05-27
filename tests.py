@@ -1,3 +1,4 @@
+import sys
 import unittest
 import json
 from mock import Mock
@@ -89,4 +90,7 @@ class CoreTests(unittest.TestCase):
 
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(CoreTests)
-    unittest.TextTestRunner(verbosity=2).run(suite)
+    result = unittest.TextTestRunner(verbosity=2).run(suite)
+    if len(result.failures) > 0:
+        print 'falures count %s' % len(result.failures)
+        sys.exit(1)
