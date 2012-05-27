@@ -40,7 +40,7 @@ class WindyPie(object):
             # format such as json
             document_collection = []
             for row in self.rows:
-                document = {}
+                document = DotDict()
                 for i in range(0,len(row)):
                     document[self.fields[i]] = str(row[i])
                 document_collection.append(document)
@@ -128,3 +128,9 @@ class SocrataPythonAdapter:
         self.config.set('credentials', 'user', self.user)
         self.config.set('credentials', 'password', self.password)
         self.config.set('server', 'host', self.url)
+
+class DotDict(dict):
+    def __getattr__(self, attr):
+        return self.get(attr, None)
+    __setattr__= dict.__setitem__
+    __delattr__= dict.__delitem__

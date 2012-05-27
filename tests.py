@@ -54,15 +54,15 @@ class CoreTests(unittest.TestCase):
         # filter the collection on a specific id
         id_collection = view.collection_by_id('65FCCC12-E3B1-4BB8-8584-71A815E14289')
         self.assertEqual(len(id_collection), 1)
-        self.assertEqual(id_collection[0]['id'], '65FCCC12-E3B1-4BB8-8584-71A815E14289')
+        self.assertEqual(id_collection[0].id, '65FCCC12-E3B1-4BB8-8584-71A815E14289')
         # we can filter on any field (it's dynamic!), let's try position
         position_collection = view.collection_by_position('6')
         self.assertEqual(len(position_collection), 1)
-        self.assertEqual(position_collection[0]['position'], '6')
+        self.assertEqual(position_collection[0].position, '6')
         # and address
         address_collection = view.collection_by_address('5701 W Madison St')
         self.assertEqual(len(address_collection), 1)
-        self.assertEqual(address_collection[0]['address'], '5701 W Madison St')
+        self.assertEqual(address_collection[0].address, '5701 W Madison St')
         # and, for good measure, let's filter by zip to see if more than one row has the same value
         zip_collection = view.collection_by_zip('60630')
         self.assertEqual(len(zip_collection), 2) # (there are 2 with the same zip)
