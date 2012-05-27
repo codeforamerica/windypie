@@ -33,11 +33,16 @@ class CoreTests(unittest.TestCase):
         self.assertEqual(self.adapter.password, self.password)
         self.assertEqual(self.adapter.token, self.token)
 
+    def test_default_init_with_no_adapter_passed_in(self):
+        '''if no socrata adapter is passed in then one should be created'''
+        windy = WindyPie(self.valid_url)
+        self.assertEqual(windy.views._adapter.url, self.valid_url)
+
     def test_get_view_by_id(self):
         '''should return a distinct view for a given id if that id exists'''
         mock_adapter = Mock()
         mock_adapter.find_by_id.return_value = self.test_view_data
-        windy = WindyPie(mock_adapter)
+        windy = WindyPie(socrata_adapter=mock_adapter)
         # get a specific view
         view = windy.views('z8bn-74gv')
         # counts of "raw" socrata data are as expected
@@ -72,7 +77,7 @@ class CoreTests(unittest.TestCase):
         '''should return all views with view_name in the name field'''
         mock_adapter = Mock()
         mock_adapter.query_views.return_value = self.test_views_named_police_stations 
-        windy = WindyPie(mock_adapter)
+        windy = WindyPie(socrata_adapter=mock_adapter)
         police_station_views = windy.views(view_name='Police Stations')
         self.assertEqual(len(police_station_views), 3)
         self.assertEqual(police_station_views[0]['id'], 'z8bn-74gv')
@@ -81,7 +86,7 @@ class CoreTests(unittest.TestCase):
         '''should return all available views when given no id or filters'''
         mock_adapter = Mock()
         mock_adapter.query_views.return_value = self.test_all_views
-        windy = WindyPie(mock_adapter)
+        windy = WindyPie(socrata_adapter=mock_adapter)
         all_views = windy.views()
         self.assertEqual(len(all_views), 50)
 

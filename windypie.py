@@ -8,7 +8,9 @@ ALL the Socrata Data Portals
 
 class WindyPie(object):
     '''Wraps all interaction with Socrata API'''
-    def __init__(self, socrata_adapter):
+    def __init__(self, url=None, socrata_adapter=None):
+        if not socrata_adapter:
+            socrata_adapter = SocrataPythonAdapter(url)
         self._views = WindyPie.Views(socrata_adapter)
         self._version = '0.0.1'
 
