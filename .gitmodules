@@ -1,3 +1,5 @@
 [submodule "socrata_python"]
 	path = socrata_python
-	url = git@github.com:codeforamerica/socrata-python.git
+    # commenting private and using public url for submodule for travis-ci
+	#url = git@github.com:codeforamerica/socrata-python.git
+	url = git://github.com/codeforamerica/socrata-python.git
