@@ -9,4 +9,6 @@ before_install:
 # command to install dependencies
 install: pip install -r requirements.txt --use-mirrors
 # command to run tests
-script: coverage run tests.py; coverage report -m --omit socrata_python/Socrata.py
+script: coverage run tests.py
+# command to run after tests
+after_script: coverage report -m --omit socrata_python/Socrata.py 
