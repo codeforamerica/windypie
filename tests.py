@@ -111,7 +111,7 @@ class CoreTests(unittest.TestCase):
         self.assertEqual(invalid_view, None)
 
     def test_version(self):
-        self.assertEqual(WindyPie(None).version, '0.0.3')
+        self.assertEqual(WindyPie(None).version, '0.0.4')
 
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(CoreTests)

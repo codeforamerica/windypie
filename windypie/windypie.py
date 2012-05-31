@@ -16,7 +16,7 @@ class WindyPie(object):
         if not socrata_adapter:
             socrata_adapter = SocrataPythonAdapter(url)
         self._views = WindyPie.Views(socrata_adapter)
-        self._version = '0.0.3'
+        self._version = '0.0.4'
 
     @property
     def views(self):

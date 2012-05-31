@@ -9,7 +9,7 @@ except ImportError:
 
 setup(
     name="WindyPie",
-    version="0.0.3",
+    version="0.0.4",
     url="https://github.com/codeforamerica/windypie",
     author="Jesse Bounds",
     author_email="jesse@codeforamerica.org",
