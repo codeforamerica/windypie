@@ -33,6 +33,9 @@ class CoreTests(unittest.TestCase):
         f = open('fixtures/views.json', 'r')
         self.test_all_views = json.loads(f.read())
         f.close()
+        f = open('fixtures/view_not_found.json', 'r')
+        self.test_view_not_found = json.loads(f.read())
+        f.close()
 
     def test_socrata_python_adapter_init(self):
         '''should init with url, user, password, and token'''
@@ -52,7 +55,7 @@ class CoreTests(unittest.TestCase):
         mock_adapter.find_by_id.return_value = self.test_view_data
         windy = WindyPie(socrata_adapter=mock_adapter)
         # get a specific view
-        view = windy.views('z8bn-74gv')
+        view = windy.views.find_by_id('z8bn-74gv') 
         # counts of "raw" socrata data are as expected
         self.assertEqual(len(view.rows), 24)
         self.assertEqual(len(view.columns), 18)
@@ -72,7 +75,7 @@ class CoreTests(unittest.TestCase):
         # we can filter on any field (it's dynamic!), let's try position
         position_collection = view.collection_by_position('6')
         self.assertEqual(len(position_collection), 1)
-        self.assertEqual(position_collection[0].position, '6')
+        self.assertEqual(position_collection[0].position, 6)
         # and address
         address_collection = view.collection_by_address('5701 W Madison St')
         self.assertEqual(len(address_collection), 1)
@@ -81,22 +84,31 @@ class CoreTests(unittest.TestCase):
         zip_collection = view.collection_by_zip('60630')
         self.assertEqual(len(zip_collection), 2) # (there are 2 with the same zip)
 
+    def test_get_view_with_invalid_id(self):
+        '''should return None'''
+        mock_adapter = Mock()
+        mock_adapter.find_by_id.return_value = self.test_view_not_found
+        windy = WindyPie(socrata_adapter=mock_adapter)
+        # get a specific view
+        view = windy.views.find_by_id('bad-id') 
+        self.assertEqual(view, None)
+
     def test_get_views_by_name(self):
-        '''should return all views with view_name in the name field'''
+        '''should return first view with view_name in the name field return by socrata API'''
         mock_adapter = Mock()
         mock_adapter.query_views.return_value = self.test_views_named_police_stations 
+        mock_adapter.find_by_id.return_value = self.test_view_data
         windy = WindyPie(socrata_adapter=mock_adapter)
-        police_station_views = windy.views(view_name='Police Stations')
-        self.assertEqual(len(police_station_views), 3)
-        self.assertEqual(police_station_views[0]['id'], 'z8bn-74gv')
+        police_station_view = windy.views.find_by_name('Police Stations')
+        self.assertEqual(len(police_station_view.rows), 24)
 
-    def test_get_all_views(self):
-        '''should return all available views when given no id or filters'''
+    def test_get_views_invalid_name(self):
+        '''should return None if view_name does not exist in socrata'''
         mock_adapter = Mock()
-        mock_adapter.query_views.return_value = self.test_all_views
+        mock_adapter.query_views.return_value = [] 
         windy = WindyPie(socrata_adapter=mock_adapter)
-        all_views = windy.views()
-        self.assertEqual(len(all_views), 50)
+        invalid_view = windy.views.find_by_name('Does not Exist')
+        self.assertEqual(invalid_view, None)
 
     def test_version(self):
         self.assertEqual(WindyPie(None).version, '0.0.3')

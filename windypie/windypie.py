@@ -28,6 +28,16 @@ class WindyPie(object):
         '''return version number of this software'''
         return self._version
 
+    class ViewFactory(object):
+        '''Instantiates View objects, or None if correct data is unavailable'''
+        @staticmethod
+        def create(view_ident, adapter):
+            data = adapter.find_by_id(view_ident)
+            if data.has_key('error'):
+                return None
+            else:
+                return WindyPie.View(data)
+
     class View(object):
         '''A model object that represents a socrata view'''
         def __init__(self, data):
@@ -40,7 +50,7 @@ class WindyPie(object):
             # socrata view meta data is lengthy! we load only the filed (aka column) string
             # values into our fields property
             for column in self.columns:
-                self._field_names.append(str(column['fieldName']))
+                self._field_names.append(column['fieldName'])
             # socrata rows include only the data, this creates a list of dictionary objects
             # (keyed by field name) so that rows can be output in an easier to manage 
             # format such as json
@@ -48,7 +58,7 @@ class WindyPie(object):
             for row in self.rows:
                 document = DotDict() # using DotDict class for dot notation of row fields
                 for i in range(0,len(row)):
-                    document[self.fields[i]] = str(row[i])
+                    document[self.fields[i]] = row[i]
                 document_collection.append(document)
             return document_collection
 
@@ -76,7 +86,7 @@ class WindyPie(object):
             '''find subset of rows with fields equal to value'''
             collection = []
             for row in self.collection:
-                if value == row[str(field)]:
+                if str(value) == str(row[field]):
                     collection.append(row)
             return collection
 
@@ -95,19 +105,40 @@ class WindyPie(object):
         def __init__(self, adapter):
             self._adapter = adapter
 
-        def __call__(self, view_id=None, view_name=None):
-            '''Get views from Socrata'''
-            if None == view_id:
-                return self.query(view_name)
+        def __route(self, view_ident=None, search_type=None):
+            '''Get views from Socrata by id or name'''
+            if search_type == 'name':
+                return self.query(view_ident)
+            elif search_type == 'id':
+                return WindyPie.ViewFactory.create(view_ident, self._adapter)
             else:
-                return WindyPie.View(self._adapter.find_by_id(view_id))
+                return None
+
+        def __getattr__(self, name):
+            '''handle requests to find views by id and name dynamically'''
+            if not name.startswith('find_by_'):
+                raise AttributeError
+            def method(*args):
+                field = name[len('find_by_'):]
+                return self.__route(view_ident=args[0], search_type=field);
+            return method
 
         def query(self, view_name):
-            '''query socrata views table and return based on paramter filter values'''
+            '''query socrata views table and return a view based on paramter filter values'''
             params = {}
             if None != view_name:
-                params['name'] = view_name
-            return self._adapter.query_views(params) 
+                params['name'] = '"%s"' % view_name
+
+            # use the views query api feature to get the view meta data and capture id (first one)
+            views = self._adapter.query_views(params)
+            # if we get nothing, we return nothing
+            if not views:
+                return None
+            # otherwise, get the view's id 
+            view_id = views[0]['id']
+
+            # return the view with that id using the normal view api
+            return WindyPie.ViewFactory.create(view_id, self._adapter)
 
 class SocrataPythonAdapter:
     '''Manage working with Socrata's odd python library until it is rewritten'''
@@ -125,8 +156,7 @@ class SocrataPythonAdapter:
 
     def query_views(self, params={}):
         '''polls through all available views in the socrata db and returns them in a list'''
-        #XXX this is a blocking call, polling 200 at a time could take time to complete!
-        params['limit'] = 200
+        #XXX this is a blocking call, could take time to complete!
         return self.dataset.find_datasets(params, 1)
 
     def set_configuration(self):
